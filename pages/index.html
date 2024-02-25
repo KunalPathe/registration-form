@@ -19,47 +19,17 @@
     <title>Registration form</title>
   </head>
 
-  <body class="background-radial-gradient">
+  <body>
     <style>
-      .background-radial-gradient {
-        background-color: hsl(219, 43%, 17%);
-        background-image: radial-gradient(
-            650px circle at 0% 0%,
-            hsl(218, 41%, 35%) 15%,
-            hsl(218, 41%, 30%) 35%,
-            hsl(218, 41%, 20%) 75%,
-            hsl(218, 41%, 19%) 80%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1250px circle at 100% 100%,
-            hsl(218, 41%, 45%) 15%,
-            hsl(218, 41%, 30%) 35%,
-            hsl(218, 41%, 20%) 75%,
-            hsl(218, 41%, 19%) 80%,
-            transparent 100%
-          );
+        body{
+        background-image: url('https://source.unsplash.com/random');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
       }
-
-      #radius-shape-1 {
-        height: 220px;
-        width: 220px;
-        top: 110px;
-        left: 130px;
-        background: radial-gradient(#44006b, #ad1fff);
-        overflow: hidden;
-      }
-
-      #radius-shape-2 {
-        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
-        bottom: 30px;
-        right: 180px;
-        width: 200px;
-        height: 300px;
-        background: radial-gradient(#44006b, #ad1fff);
-        overflow: hidden;
-      }
-
       #card {
         margin-top: 100px;
         top: 7%;
@@ -77,16 +47,9 @@
     </style>
 
     <section class="text-center">
-      <div
-        id="radius-shape-1"
-        class="position-absolute rounded-circle shadow-5-strong"
-      ></div>
-      <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
-      <div class="card mx-9 lg-12 mx-md-5 shadow-5-strong" id="card">
+      <div class="card mx-9 lg-12 mx-md-5" id="card">
         <div class="card-body px-md-5 align-left">
           <h2 class="fw-bold mb-5">Registration Form</h2>
-
-
           
           <form method="post" action="/register" style="text-align: left">
             <div class="form-outline mb-4">
@@ -110,8 +73,7 @@
               Register
             </button>
           </form>
-
-
+          
         </div>
       </div>
     </section>
